@@ -29,7 +29,7 @@ list_items.append('Avocado')
 print(list_items)
 
 # user inputing a value from a list last pisition
-list_items.append(input("enter a value"))
+#list_items.append(input("enter a value"))
 # output is "['suhail', 'sugu', 'ubu', 'apple', 'orange', 'water malon', 10, 'Avocado', 'Blueberry']"
 print(list_items)
 # here blueberry is user inputed
@@ -42,21 +42,21 @@ print(list_items)
 
 # user inputting methord for insert
 # a error the positon is int input func take string so we will convert int
-list_items.insert(int(input('enter the position')), input('enter a value'))
+#list_items.insert(int(input('enter the position')), input('enter a value'))
 # output is "['suhail', 'mango', 'sugu', 'Black currant', 'ubu', 'apple', 'orange', 'water malon', 10, 'Avocado']"
 print(list_items)
 
 
 # control statement.........
 # here if entered value is 0 the output is +ve
-num = int(input('enter a number'))
-if num < 0:  # so in this situvation we will use 'elif'
-    print('number is -ve')
-elif num == 0:
-    # !!! FORMAT ARE MUST BE FOLLOW IN CONTROL STATEMENT !!!
-    print('number is zero')
-else:
-    print('number is +ve')
+# num = int(input('enter a number'))
+# if num < 0:  # so in this situvation we will use 'elif'
+#     print('number is -ve')
+# elif num == 0:
+#     # !!! FORMAT ARE MUST BE FOLLOW IN CONTROL STATEMENT !!!
+#     print('number is zero')
+# else:
+#     print('number is +ve')
 
 
 # loops...........
@@ -81,12 +81,38 @@ for i in range(1, 11, 2):  # here three parameter 'start','stop','step/divide'
     print(i)
 
 
+
+
+
+# problem ?
+# multiplication table code
+# ans = 0
+# m = int(input('enter a number your multipication'))
+# rng=int(input('enter the range of multipication'))
+# for n in range(1, rng+1):
+#     ans = n*m
+#     print(str(m)+' * '+str(n)+' = '+str(ans))
+
+
 # problem ?
 """
    *
   * *
  * * *  
 """  # code for this pattern
+n=int(input('enter the no of rows'))
+i=1
+while i<=n:
+    j=1
+    while j<=n-i:
+       print('',end=" ")
+       j+=1
 
-# problem ?
-# multiplication table code
+    j=1
+    while j<=i:
+      print('*',end=" ")
+      j=j+1
+
+    print('')
+    i=i+1
+    
