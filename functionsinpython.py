@@ -7,9 +7,9 @@ def hey():
 hey()
 
 # argument passing inn a function
-def hello(name):
-  print("my name is ",name)
+def hello(name,age):
+  print("my name is ",name,'age:'+str(age))
 
 # hello func call
 value='suhail'
-hello(value)
+hello(value,25)
