@@ -51,3 +51,12 @@ def sample():
 
 print(val)  # here is the 2ed example using outside of the sample func
 sample()
+
+
+# named argument
+def sample1(name,age):
+    print(name,age)
+
+sample1("suhail",25)# normal argument passing
+sample1(age=30,name="suhail")# named argument passing
+# use of this type of argument passing is value will pass any ***order****    
