@@ -75,3 +75,20 @@ def sum(num1, num2):
 # answer is in the func call, that answer put into the result variable
 result = sum(10, 20)
 print('result = '+str(result))  # then print it.
+
+
+# dictionary concept
+value1 = {"name": "suhail", "place": "koppam",
+          "district": "kollam", "state": "manali", "pin": "688088"}
+print(value1)
+print(value1.get('place'), value1.get('name'))
+# dictionary mainly used backend data get it is a format
+
+
+# four type of functions
+"""
+1. Function with no argument and no Return value.
+2. With no argument and with a Return value.
+3. With argument and No Return value.
+4. With argument and Return value.
+"""
