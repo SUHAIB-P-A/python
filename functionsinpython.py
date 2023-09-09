@@ -55,11 +55,23 @@ sample()
 
 
 # named argument
-def sample1(name, age=20): # default value ,here no argument will pass they will use this default value otherwise use passsed value
+def sample1(name, age=20):  # default value ,here no argument will pass they will use this default value otherwise use passsed value
     print(name, age)
 
 
 sample1("suhail", 25)  # normal argument passing
 sample1(age=30, name="suhail")  # named argument passing
 # use of this type of argument passing is value will pass any ***order****
-sample1(name="suhail",age=23)
+sample1(name="suhail", age=23)
+
+# sum of two numbers using func
+
+
+def sum(num1, num2):
+    sum = num1+num2  # add two numbers
+    return sum  # return the answer to the call of the func
+
+
+# answer is in the func call, that answer put into the result variable
+result = sum(10, 20)
+print('result = '+str(result))  # then print it.
