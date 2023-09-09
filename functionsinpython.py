@@ -24,6 +24,6 @@ values tuple can only be permit to view the values
 
 # arbitrary argument
 def hello1(*values):
-  print("first: "+values[0]+" secound: "+values[1],values[2])
+  print("first: "+values[0]+" secound: "+values[1],values[2]) # values get in to the tuples
 
-hello1("haii","hello","how are you")  
+hello1("haii","hello","how are you") # like a tuple & func call
