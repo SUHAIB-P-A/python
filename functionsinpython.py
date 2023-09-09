@@ -40,11 +40,12 @@ hello1("haii", "hello", "how are you")  # like a tuple & func call
 # concept of GLOBAL variable & LOCAL variable
 val = 10  # this is the globel variable
 
+
 def sample():
     val = 30  # it is a local variable
     val = val+1  # here  an error 'val+1' val is not resolved in this error will resolve we use 'val = 30'
-    s = val+1# another methord 
-    # the above three lines are local variables these are not accessed other part of the code 
+    s = val+1  # another methord
+    # the above three lines are local variables these are not accessed other part of the code
     print(val)  # in this variable can be accesed any way in the whole code
     # here is the 1st example val variable used in to the sample func
 
@@ -54,9 +55,11 @@ sample()
 
 
 # named argument
-def sample1(name,age):
-    print(name,age)
+def sample1(name, age=20): # default value ,here no argument will pass they will use this default value otherwise use passsed value
+    print(name, age)
 
-sample1("suhail",25)# normal argument passing
-sample1(age=30,name="suhail")# named argument passing
-# use of this type of argument passing is value will pass any ***order****    
+
+sample1("suhail", 25)  # normal argument passing
+sample1(age=30, name="suhail")  # named argument passing
+# use of this type of argument passing is value will pass any ***order****
+sample1(name="suhail",age=23)
