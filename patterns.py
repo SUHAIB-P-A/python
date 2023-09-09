@@ -47,3 +47,28 @@ while i <= n:
 
     print()
     i += 1
+
+
+# problem ?
+"""
+* * * *
+ * * *
+  * * 
+   *
+"""
+
+n=int(input('enter the no of rows'))
+i=1
+while i<=n:
+    j=1
+    while j<=i:
+       print('',end=" ")
+       j+=1
+
+    j=n
+    while j>=i:
+      print('*',end=" ")
+      j=j-1
+
+    print('')
+    i=i+1
