@@ -8,4 +8,7 @@ def summasion(num1,num2):# this is a sample sum code in this code
      sum=num1+num2
      print(sum)
 
-print('suhail')     
+print('suhail')  
+
+def printwelcome():
+     print('welcome')
