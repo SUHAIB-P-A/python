@@ -1,6 +1,6 @@
 print('hello')
 
-print(__name__)
+#print(__name__)
 
 def summasion(num1,num2):# this is a sample sum code in this code 
      # the func summasion call in another file using 'import'
