@@ -3,6 +3,7 @@
 def check_scope():
     def do_local():
         test = 'local test'
+        print(test)
 
     def do_non_local():
         test = 'non loacal test'
