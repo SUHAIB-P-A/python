@@ -6,11 +6,12 @@ def check_scope():
         print(test)
 
     def do_non_local():
-        nonlocal test
+        nonlocal test  # keyword 'nonlocal'
         print(test)  # output is 'default'
         test = 'non loacal test'
 
     def do_globel():
+        global test  # keyword 'globel'
         test = 'globel test'
 
     test = 'default'
@@ -23,5 +24,13 @@ def check_scope():
     print('after calling do_non_local is: '+test)
     # output is 'after calling do_non_local is: non loacal test'
 
+    do_globel()
+    print('after calling do_non_local is: '+test)
+    # output is 'after calling do_non_local is: non loacal test'
+    # here is print 'non loacal test' because globel keyword used variable only acess outside of the main
+    # example is 'print("after check_scope is: "+test)' this code
+
 
 check_scope()  # first call func --> call do_local func --> test value is 'local test' --> after executing the code test value will replaced 'default'--> after printing default the execution end
+print("after check_scope is: "+test)  # globel test accesing
+# output is 'after check_scope is: globel test'
