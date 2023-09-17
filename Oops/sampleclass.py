@@ -1,7 +1,7 @@
 # class definition
 class Mysampleclass:
     # func definision
-    def hello():
+    def hello():  # in other python doc in class inside func contain a 'self' parameter but here what ever it is not mantatory
         print("hello")
     print("haii")
 
