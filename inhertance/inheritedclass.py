@@ -11,6 +11,10 @@ class subclass(base):  # subclass inherited base a copy of base inside the subcl
     def __init__(self):  # constroctor overreading example
         print("subclass init")
 
+    def set_name(self, name):# function overreadig
+        self.name = name
+        print("sub func overreading")    
+
     def print_welcom(self):
         print("welcom")
 
