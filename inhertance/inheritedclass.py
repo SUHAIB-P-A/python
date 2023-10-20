@@ -4,14 +4,17 @@ class base:
 
     def set_name(self, name):
         self.name = name
+        print("base func set")
 
 
 class subclass(base):  # subclass inherited base a copy of base inside the subclass
 
     def __init__(self):  # constroctor overreading example
+        super().__init__()
         print("subclass init")
 
     def set_name(self, name):# function overreadig
+        super().set_name("ali azhar")
         self.name = name
         print("sub func overreading")    
 
