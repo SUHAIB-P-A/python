@@ -3,17 +3,17 @@ class first:
         print("first")
 
 
-class secound:
+class secound(first): # example multilevel inhertance
     def dispaly_secound(self):
         print("secound")
 
 
-class third(first, secound):  # multiple inheritence
+class third(secound):  # multiple inheritence
     def dispaly_third(self):
         print("third")
 
-x=third
+x=third()
 
-x.dispaly_third(x)
-x.dispaly_first(x)
-x.dispaly_secound(x)
+x.dispaly_third()
+x.dispaly_first()
+x.dispaly_secound()
