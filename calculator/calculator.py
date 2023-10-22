@@ -1,28 +1,29 @@
 from tkinter import *
+import tkinter.font as font
 
 window=Tk()# object 
 
 window.geometry("500x500")
 window.config(bg="#0e493e")
 
-
+f = font.Font(size=20)
 # buttons
-button1=Button(window,text="1")
-button2=Button(window,text="2")
-button3=Button(window,text="3")
-button4=Button(window,text="4")
-button5=Button(window,text="5")
-button6=Button(window,text="6")
-button7=Button(window,text="7")
-button8=Button(window,text="8")
-button9=Button(window,text="9")
-button0=Button(window,text="0")
-buttonok=Button(window,text="=")
-buttondot=Button(window,text=".")
-buttonplus=Button(window,text="+")
-buttonsub=Button(window,text="-")
-buttondiv=Button(window,text="/")
-buttonmul=Button(window,text="*")
+button1=Button(window,text="1",font=f)
+button2=Button(window,text="2",font=f)
+button3=Button(window,text="3",font=f)
+button4=Button(window,text="4",font=f)
+button5=Button(window,text="5",font=f)
+button6=Button(window,text="6",font=f)
+button7=Button(window,text="7",font=f)
+button8=Button(window,text="8",font=f)
+button9=Button(window,text="9",font=f)
+button0=Button(window,text="0",font=f)
+buttonok=Button(window,text="=",font=f)
+buttondot=Button(window,text=".",font=f)
+buttonplus=Button(window,text="+",font=f)
+buttonsub=Button(window,text="-",font=f)
+buttondiv=Button(window,text="/",font=f)
+buttonmul=Button(window,text="*",font=f)
 
 # arrange the button(matrix or grid)
 button1.grid(row="2",column="0",ipadx="31.25",ipady="31.25")
