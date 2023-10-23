@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 
 window = tk.Tk()  # object
 
-window.geometry("500x500")
+window.geometry("400x600")
 window.config(bg="#0e493e")
 window.title("calculator")
 # icon= tk.PhotoImage(r"C:/Users/Suhaib/learnPy/calculator/calculator_jP3_icon.ico")
@@ -16,6 +16,11 @@ icon = ImageTk.PhotoImage(icon)
 # call the image
 window.tk.call('wm', 'iconphoto', window._w, '-default', icon)
 # window.iconbitmap('calculator\calculator_jP3_icon.ico')
+
+#TextBox
+calculator_screen = tk.Entry(window, font=("Helvetica", 20),bg="#d1d4dc")
+calculator_screen.grid(row=0, column=0, columnspan=4, padx=10, pady=10, ipadx=31.25, ipady=31.25)
+
 
 f = font.Font(size=20)
 # buttons
@@ -37,22 +42,22 @@ buttondiv = Button(window, text="/", font=f)
 buttonmul = Button(window, text="*", font=f)
 
 # arrange the button(matrix or grid)
-button1.grid(row="2", column="0", ipadx="31.25", ipady="31.25")
-button2.grid(row="2", column="1", ipadx="31.25", ipady="31.25")
-button3.grid(row="2", column="2", ipadx="31.25", ipady="31.25")
-button4.grid(row="1", column="0", ipadx="31.25", ipady="31.25")
-button5.grid(row="1", column="1", ipadx="31.25", ipady="31.25")
-button6.grid(row="1", column="2", ipadx="31.25", ipady="31.25")
-button7.grid(row="0", column="0", ipadx="31.25", ipady="31.25")
-button8.grid(row="0", column="1", ipadx="31.25", ipady="31.25")
-button9.grid(row="0", column="2", ipadx="31.25", ipady="31.25")
-button0.grid(row="3", column="1", ipadx="31.25", ipady="31.25")
-buttonok.grid(row="3", column="2", ipadx="31.25", ipady="31.25")
-buttondot.grid(row="3", column="0", ipadx="31.25", ipady="31.25")
-buttonplus.grid(row="0", column="3", ipadx="31.25", ipady="31.25")
-buttondiv.grid(row="1", column="3", ipadx="31.25", ipady="31.25")
-buttonmul.grid(row="2", column="3", ipadx="31.25", ipady="31.25")
-buttonsub.grid(row="3", column="3", ipadx="31.25", ipady="31.25")
+button7.grid(row=1, column=0, padx=10, pady=10, ipadx=20, ipady=20)
+button8.grid(row=1, column=1, padx=10, pady=10, ipadx=20, ipady=20)
+button9.grid(row=1, column=2, padx=10, pady=10, ipadx=20, ipady=20)
+button4.grid(row=2, column=0, padx=10, pady=10, ipadx=20, ipady=20)
+button5.grid(row=2, column=1, padx=10, pady=10, ipadx=20, ipady=20)
+button6.grid(row=2, column=2, padx=10, pady=10, ipadx=20, ipady=20)
+button1.grid(row=3, column=0, padx=10, pady=10, ipadx=20, ipady=20)
+button2.grid(row=3, column=1, padx=10, pady=10, ipadx=20, ipady=20)
+button3.grid(row=3, column=2, padx=10, pady=10, ipadx=20, ipady=20)
+button0.grid(row=4, column=0, padx=10, pady=10, ipadx=20, ipady=20)
+buttonok.grid(row=4, column=1, padx=10, pady=10, ipadx=20, ipady=20)
+buttondot.grid(row=4, column=2, padx=10, pady=10, ipadx=20, ipady=20)
+buttonplus.grid(row=1, column=3, padx=10, pady=10, ipadx=20, ipady=20)
+buttondiv.grid(row=2, column=3, padx=10, pady=10, ipadx=20, ipady=20)
+buttonmul.grid(row=3, column=3, padx=10, pady=10, ipadx=20, ipady=20)
+buttonsub.grid(row=4, column=3, padx=10, pady=10, ipadx=20, ipady=20)
 
 
 window.mainloop()
