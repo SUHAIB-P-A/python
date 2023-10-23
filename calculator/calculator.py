@@ -1,10 +1,18 @@
 from tkinter import *
 import tkinter.font as font
+import tkinter as tk
+from PIL import Image, ImageTk
 
-window=Tk()# object 
+window=tk.Tk()# object 
 
 window.geometry("500x500")
 window.config(bg="#0e493e")
+window.title("calculator")
+#icon= tk.PhotoImage(r"C:/Users/Suhaib/learnPy/calculator/calculator_jP3_icon.ico")
+icon = Image.open("C:\\Users\\Suhaib\\learnPy\\calculator\\calculator_jP3_icon.ico")
+icon = ImageTk.PhotoImage(icon)
+window.tk.call('wm', 'iconphoto', window._w,'-default', icon)
+#window.iconbitmap('calculator\calculator_jP3_icon.ico')
 
 f = font.Font(size=20)
 # buttons
