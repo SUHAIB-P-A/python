@@ -21,9 +21,11 @@ armlist = []
 numstr = str(num)
 for i in range(len(numstr)):
     Armstrong = int(numstr[i])**len(numstr)
-    print(numstr[i]+"**"+str(len(numstr))+"="+str(Armstrong))
+    print(numstr[i]+"**"+str(len(numstr))+"="+str(Armstrong),end=" ")
     armlist.append(Armstrong)
     arm = arm+Armstrong
+
+print("\n")
 
 for i in range(len(numstr)):
     print(str(armlist[i]), end="")
