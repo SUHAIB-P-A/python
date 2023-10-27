@@ -17,6 +17,8 @@ icon = ImageTk.PhotoImage(icon)
 window.tk.call('wm', 'iconphoto', window._w, '-default', icon)
 # window.iconbitmap('calculator\calculator_jP3_icon.ico')
 
+# manage the button click
+
 
 def Button_click(text):
     if (text == "C"):
@@ -26,9 +28,13 @@ def Button_click(text):
     else:
         append_screen(text)
 
+# clear the entry field
+
 
 def clear_screen():
     calculator_screen.delete(0, tk.END)
+
+# result display func
 
 
 def result():
@@ -39,6 +45,8 @@ def result():
     except EXCEPTION:
         calculator_screen.delete(0, tk.END)
         calculator_screen.insert(0, "error")
+
+# add one or more values on the entry field
 
 
 def append_screen(text):
