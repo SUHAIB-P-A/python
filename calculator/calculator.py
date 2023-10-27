@@ -19,10 +19,28 @@ window.tk.call('wm', 'iconphoto', window._w, '-default', icon)
 
 
 def Button_click(text):
+    if(text=="C"):
+        clear_screen()
+    elif(text=="="):
+        result()
+    else:
+        append_screen(text)        
+    
+
+def clear_screen():
+    calculator_screen.delete(0,tk.END) 
+
+def result():
+    print("haii")      
+
+def append_screen(text):
     current_text = calculator_screen.get()
     calculator_screen.delete(0, tk.END)
     calculator_screen.insert(0, current_text+text)
     print(current_text)
+
+
+
 
 
 # TextBox
