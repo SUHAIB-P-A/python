@@ -31,7 +31,13 @@ def clear_screen():
     calculator_screen.delete(0,tk.END) 
 
 def result():
-    print("haii")      
+    try:
+        result=str(eval(calculator_screen.get()))
+        calculator_screen.delete(0,tk.END)
+        calculator_screen.insert(0,result)
+    except EXCEPTION:
+        calculator_screen.delete(0,tk.END)
+        calculator_screen.insert(0,"error")         
 
 def append_screen(text):
     current_text = calculator_screen.get()
