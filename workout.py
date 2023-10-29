@@ -37,3 +37,20 @@ if (arm == num):
     print("Armstrong")
 else:
     print("is not a Armstrong")
+
+# prime or not
+
+num=int(input("enter a number"))
+count=0
+for i in range(1,num+1):
+  for j in range(1,num+1):
+    result=i*j
+    #print(result)
+    if result==num:
+      count+=1
+      print(i)
+print("count:"+str(count))
+if count<=2:
+  print(str(num)+" is a prime number")
+else:
+  print(str(num)+" is a composite number" )
