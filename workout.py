@@ -21,7 +21,7 @@ armlist = []
 numstr = str(num)
 for i in range(len(numstr)):
     Armstrong = int(numstr[i])**len(numstr)
-    print(numstr[i]+"**"+str(len(numstr))+"="+str(Armstrong),end=" ")
+    print(numstr[i]+"**"+str(len(numstr))+"="+str(Armstrong), end=" ")
     armlist.append(Armstrong)
     arm = arm+Armstrong
 
@@ -40,17 +40,17 @@ else:
 
 # prime or not
 
-num=int(input("enter a number"))
-count=0
-for i in range(1,num+1):
-  for j in range(1,num+1):
-    result=i*j
-    #print(result)
-    if result==num:
-      count+=1
-      print(i)
+num = int(input("enter a number"))
+count = 0
+for i in range(1, num+1):
+    for j in range(1, num+1):
+        result = i*j
+        # print(result)
+        if result == num:
+            count += 1
+            print(i)
 print("count:"+str(count))
-if count<=2:
-  print(str(num)+" is a prime number")
+if count <= 2:
+    print(str(num)+" is a prime number")
 else:
-  print(str(num)+" is a composite number" )
+    print(str(num)+" is a composite number")
